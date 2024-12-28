@@ -1,4 +1,3 @@
-// CustomCheckBox.js
 import {useState, React, useRef } from 'react';
 
 import { View, Text, StyleSheet, ScrollView, TouchableNativeFeedback } from 'react-native';
@@ -46,7 +45,7 @@ const DateScrollerHome = () => {
         return (
             <Text style = {{fontSize: 18}}>{ mounthOfWeek[startDate.getMonth()]}</Text>
         )
-    }
+    };
     const Week = (props) => {
         const days = [];
         const startDate = new Date();
@@ -59,7 +58,7 @@ const DateScrollerHome = () => {
                 text: daysOfWeek[i],
                 number: date.getDate().toString(),
             });
-        }
+        };
         return (
             <View style = {styles.week}>
                 <DateDayHome text = {days[0].text} number = {days[0].number}></DateDayHome>
@@ -70,8 +69,8 @@ const DateScrollerHome = () => {
                 <DateDayHome text = {days[5].text} number = {days[5].number}></DateDayHome>
                 <DateDayHome text = {days[6].text} number = {days[6].number}></DateDayHome>
             </View>
-        )
-    }
+        );
+    };
 
     return (
         <View style = {styles.scroll_container}>
@@ -112,8 +111,8 @@ const styles = StyleSheet.create({
     scroll: {
         paddingTop: 10,
         paddingBottom: 5,
-        minHeight: 90,
-        height: 70,
+        minHeight: 80,
+        height: 60,
         gap: 20,
         paddingHorizontal: 10,
     },
@@ -122,7 +121,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         justifyItems: 'center',
         width: 375,
-        minHeight: 100
+        backgroundColor: 'rgba(0, 0, 0, 0)'
     },
     scroll_console: {
         display: 'flex',
@@ -138,7 +137,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 10,
         width: 355,
-        justifyContent: 'center',
+        justifyContent: 'center'
     }
 });
 

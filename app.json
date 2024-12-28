@@ -27,7 +27,9 @@
       [
         "expo-font",
         {
-          "fonts": ["./src/assets/fonts/NicoMoji-Regular.ttf"]
+          "fonts": ["./src/assets/fonts/NicoMoji-Regular.ttf",
+          "./src/assets/fonts/Nunito-VariableFont_wght.tff"
+        ]
         }
       ]
     ]
