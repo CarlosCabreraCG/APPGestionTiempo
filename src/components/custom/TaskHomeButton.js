@@ -1,10 +1,13 @@
 // CustomCheckBox.js
 import React from 'react';
 import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const TaskHomeButton = () => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress = {() => navigation.navigate('ConfigTask')}>
       <View style = {styles.container}>
         <View style = {styles.grey}>
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
-
 const DateDayHome = (props) => {
   return (
     <TouchableNativeFeedback
